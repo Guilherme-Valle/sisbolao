@@ -24,7 +24,7 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1480px // additional breakpoint
+  xxl: 1280px // additional breakpoint
 );
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
