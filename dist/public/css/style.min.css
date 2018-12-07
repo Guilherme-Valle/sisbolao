@@ -1,2 +1,2 @@
-
+body,html{min-height:100%;font-family:Montserrat,sans-serif;letter-spacing:1px}body{padding-top:80px}@media only screen and (min-width:992px){body{padding-top:160px}}.page-wrap{width:100%;min-height:100%;overflow:hidden!important}#top-header{position:fixed;width:100%;left:0;top:0;background-color:transparent;z-index:1}#top-header:not(.top-header--home){border-bottom:1px solid rgba(0,0,0,.075);box-shadow:0 4px 0 4px hsla(0,0%,100%,.12)}#top-header .navbar .btn,#top-header .navbar .nav-link{font-size:12px!important}.top-header__container{background-color:#fff}@media only screen and (min-width:992px){.top-header--home{padding-top:45px}}
 /*# sourceMappingURL=style.min.css.map */
