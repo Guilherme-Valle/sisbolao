@@ -107,3 +107,19 @@ $theme-colors: map-merge(
   ),
   $palette
 );
+
+// Breadcrumbs
+
+$breadcrumb-padding-y:              1.5rem;
+
+$breadcrumb-margin-bottom:          0;
+
+$breadcrumb-bg:                     transparent;
+$breadcrumb-divider-color:          white;
+$breadcrumb-active-color:           white;
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-focus-color:       theme-color("pal-1-2");

@@ -5060,10 +5060,10 @@ input[type="button"].btn-block {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
+  padding: 1.5rem 1rem;
+  margin-bottom: 0;
   list-style: none;
-  background-color: #e9ecef;
+  background-color: transparent;
   border-radius: 0.25rem; }
 
 .breadcrumb-item + .breadcrumb-item {
@@ -5071,7 +5071,7 @@ input[type="button"].btn-block {
   .breadcrumb-item + .breadcrumb-item::before {
     display: inline-block;
     padding-right: 0.5rem;
-    color: #6c757d;
+    color: white;
     content: "/"; }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
@@ -5081,7 +5081,7 @@ input[type="button"].btn-block {
   text-decoration: none; }
 
 .breadcrumb-item.active {
-  color: #6c757d; }
+  color: white; }
 
 .pagination {
   display: -webkit-box;
