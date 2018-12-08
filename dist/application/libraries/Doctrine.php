@@ -1,10 +1,10 @@
 <?php
 /**
  * Biblioteca que permite integração com o Doctrine.
- * @author Daniel Ferreira
- * @author Guilherme do Valle
- * @author Lucas Santos
- * @since	Version 1.0.0
+ * @author  Daniel Ferreira
+ * @author  Guilherme do Valle
+ * @author  Lucas Santos
+ * @since   1.0.0
  */
 
 use Doctrine\Common\ClassLoader;
@@ -41,7 +41,7 @@ class Doctrine {
 
         // Aplica as configurações com base nas informações definidas acima
         // Se $dev_mode for definido como TRUE o cache é desativado
-        $config = Setup::createAnnotationMetadataConfiguration($metadata_paths, $dev_mode = true, $proxies_dir);
+        $config = Setup::createAnnotationMetadataConfiguration($metadata_paths, $dev_mode = true);
         $this->entity_manager = EntityManager::create($connection_options, $config);
         $loader = new ClassLoader($models_namespace, $models_path);
         $loader->register();
