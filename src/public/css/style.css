@@ -47,9 +47,6 @@ body {
 /*
  Página: Cadastro
  */
-.registration-form__form-wrap {
-    box-shadow: 0 5px 30px 5px rgba(0,0,0,.06);
-}
 .form-control-lg {
     font-size: .9rem;
 }
@@ -60,6 +57,13 @@ body {
 /* Breadcrumb */
 [aria-label="breadcrumb"].bg-pal-2-2 .breadcrumb-item:not(.active) a {
     color: rgba(255,255,255,0.75);
+}
+
+/*
+ Helpers
+ */
+.blur-shadow {
+    box-shadow: 0 5px 30px 5px rgba(0,0,0,.06);
 }
 
 /*
