@@ -113,7 +113,7 @@
 
 		</div><!-- /.page-wrap !-->
 
-		<footer class="standard-footer py-3 border-top box-shadow-spread-top-white">
+		<footer class="standard-footer py-3 border-top box-shadow-spread-top-white position-absolute w-100">
 			<div class="container">
 				<div class="row text-center text-black-50">
 					<div class="col-12">
