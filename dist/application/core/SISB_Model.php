@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class SISB_model extends CI_Model {
+class SISB_Model extends CI_Model {
 
     const SINGLE_RESULT = 1;
     const MULTIPLE_RESULTS = 2;
