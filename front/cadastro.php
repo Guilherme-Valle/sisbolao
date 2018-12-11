@@ -118,7 +118,7 @@
 					</div><!-- /.row !-->
 				</div><!-- /.container !-->
 			</section><!-- /#registration-form !-->
-			
+
 		</div><!-- /.page-wrap !-->
 
 		<footer class="standard-footer py-3 border-top box-shadow-spread-top-white">
@@ -130,6 +130,8 @@
 				</div><!-- /.row !-->
 			</div><!-- /.container !-->
 		</footer><!-- /.standard-footer !-->
-			
+	
+		<script src="../dist/public/js/utils.min.js"></script>
+		<script src="../dist/public/js/scripts.min.js"></script>
 	</body>
 </html>

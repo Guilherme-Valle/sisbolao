@@ -17,7 +17,7 @@
 	<body>
 
 		<div class="page-wrap">
-			
+
 			<header id="top-header" class="bg-white text-uppercase">
 				<div class="top-header__container container px-md-2 py-2 rounded">
 					<div class="row m-0">
@@ -122,6 +122,8 @@
 				</div><!-- /.row !-->
 			</div><!-- /.container !-->
 		</footer><!-- /.standard-footer !-->
-		
+	
+		<script src="../dist/public/js/utils.min.js"></script>
+		<script src="../dist/public/js/scripts.min.js"></script>
 	</body>
 </html>

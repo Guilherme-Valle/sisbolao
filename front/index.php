@@ -112,6 +112,8 @@
 				</div><!-- /.row !-->
 			</div><!-- /.container !-->
 		</footer><!-- /.standard-footer !-->
-			
+	
+		<script src="../dist/public/js/utils.min.js"></script>
+		<script src="../dist/public/js/scripts.min.js"></script>
 	</body>
 </html>
