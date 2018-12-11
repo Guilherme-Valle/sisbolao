@@ -66,7 +66,7 @@
 			<div class="container">
 				<div class="row justify-content-md-center">
 					<div class="col-12 col-md-9 col-lg-7">
-						<div class="registration-form__form-wrap p-5">
+						<div class="blur-shadow p-5">
 							<form>
 								<div class="row">
 									<div class="col-12 col-md-6">
