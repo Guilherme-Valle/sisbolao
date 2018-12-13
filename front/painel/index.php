@@ -204,7 +204,7 @@
 						</div>
 						<div class="col-12 col-md-6">
 							<div class="row">
-								<div class="col-12 col-lg-6 mt-4 mb-4 mt-md-0 mb-lg-0">
+								<div class="col-12 col-xl-6 mt-4 mb-4 mt-md-0">
 									<div class="card border-0 rounded p-3 blur-shadow mr-0">
 										<div class="card-body">
 											<h5 class="card-title text-muted">Sua Pontuação</h5>
@@ -214,7 +214,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-12 col-lg-6">
+								<div class="col-12 col-xl-6">
 									<div class="card border-0 rounded p-3 blur-shadow mr-0">
 										<div class="card-body">
 											<h5 class="card-title text-muted">Seus Bolões</h5>
