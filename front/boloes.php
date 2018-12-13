@@ -54,7 +54,7 @@
 			<nav aria-label="breadcrumb" class="py-4 bg-pal-2-2">
 				<div class="container">
 					<div class="row">
-						<ol class="breadcrumb bg-transparent m-0">
+						<ol class="breadcrumb bg-transparent m-0 small">
 							<li class="breadcrumb-item">
 								<a href="#">Inicio</a>
 							</li>
