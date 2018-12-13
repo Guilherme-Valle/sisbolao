@@ -78,6 +78,7 @@
                                             <th scope="col">Campeonato</th>
                                             <th scope="col">Rodada</th>
                                             <th scope="col">Apostadores</th>
+                                            <th scope="col">Encerramento</th>
                                             <th scope="col">Ações</th>
                                         </tr>
                                     </thead>
@@ -90,9 +91,13 @@
                                             <td>Campeonato Brasileiro - Série A - 2019</td>
                                             <td>2ª</td>
                                             <td>34/100</td>
+                                            <td>15/12/2018</td>
                                             <td>
-                                                <a href="#!" class="btn btn-sm btn-pal-4">
-                                                    <small>Ver</small>
+                                                <a href="#!" class="btn btn-sm btn-pal-2">
+                                                    <small>Editar palpites</small>
+                                                </a>
+                                                <a href="#!" class="btn btn-sm btn-danger">
+                                                    <small>Sair</small>
                                                 </a>
                                             </td>
                                         </tr>
@@ -104,12 +109,13 @@
                                             <td>Campeonato Brasileiro - Série B - 2019</td>
                                             <td>2ª</td>
                                             <td>21/60</td>
+                                            <td>18/12/2018</td>
                                             <td>
-                                                <a href="#!" class="btn btn-sm btn-pal-4">
-                                                    <small>Ver</small>
+                                                <a href="#!" class="btn btn-sm btn-pal-2">
+                                                    <small>Editar palpites</small>
                                                 </a>
-                                                <a href="#!" class="btn btn-sm btn-pal-1">
-                                                    <small>Solicitar convite</small>
+                                                <a href="#!" class="btn btn-sm btn-danger">
+                                                    <small>Sair</small>
                                                 </a>
                                             </td>
                                         </tr>
@@ -121,12 +127,13 @@
                                             <td>Campeonato Espanhol - Série A - 2019</td>
                                             <td>1ª</td>
                                             <td>64/60</td>
+                                            <td>14/12/2018</td>
                                             <td>
-                                                <a href="#!" class="btn btn-sm btn-pal-4">
-                                                    <small>Ver</small>
+                                                <a href="#!" class="btn btn-sm btn-pal-2">
+                                                    <small>Editar palpites</small>
                                                 </a>
-                                                <a href="#!" class="btn btn-sm btn-pal-1">
-                                                    <small>Solicitar convite</small>
+                                                <a href="#!" class="btn btn-sm btn-danger">
+                                                    <small>Sair</small>
                                                 </a>
                                             </td>
                                         </tr>
@@ -138,9 +145,13 @@
                                             <td>Campeonato Baiano - Série A - 2019</td>
                                             <td>2ª</td>
                                             <td>34/100</td>
+                                            <td>19/12/2018</td>
                                             <td>
-                                                <a href="#!" class="btn btn-sm btn-pal-4">
-                                                    <small>Ver</small>
+                                                <a href="#!" class="btn btn-sm btn-light disabled" aria-disabled="true">
+                                                    <small>Editar palpites</small>
+                                                </a>
+                                                <a href="#!" class="btn btn-sm btn-danger">
+                                                    <small>Sair</small>
                                                 </a>
                                             </td>
                                         </tr>
