@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 08-Dez-2018 às 23:26
+-- Generation Time: 14-Dez-2018 às 12:31
 -- Versão do servidor: 5.7.19
 -- PHP Version: 7.1.9
 
@@ -31,10 +31,13 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `administrator`;
 CREATE TABLE IF NOT EXISTS `administrator` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `access_level` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `state` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `last_login` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `last_ip` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -79,10 +82,13 @@ CREATE TABLE IF NOT EXISTS `bettingset` (
 DROP TABLE IF EXISTS `bettor`;
 CREATE TABLE IF NOT EXISTS `bettor` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `access_level` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `state` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `last_login` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `last_ip` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -169,19 +175,15 @@ CREATE TABLE IF NOT EXISTS `scoreboards` (
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `access_level` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `state` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `last_login` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `last_ip` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Extraindo dados da tabela `users`
---
-
-INSERT INTO `users` (`id`, `username`, `password`, `name`, `email`) VALUES
-(1, 'lucasljsb', '12345', 'Lucas de Jesus Santos Brito', 'lucasljsb@gmail.com');
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Constraints for dumped tables

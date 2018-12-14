@@ -9,31 +9,65 @@ namespace Entity;
 class User {
 
     /**
-    * @Id
-    * @Column(type="integer", name="id")
-    * @GeneratedValue
-    */
+     * Código de identificação do usuário.
+     * @Id
+     * @Column(type="integer", name="id")
+     * @GeneratedValue
+     */
     protected $id;
 
     /**
-     * @Column(name="username")
+     * Nível de permissão do usuário, utilizado para diferenciar
+     * usuários comuns dos administradores do sistema.
+     * @Column(name="access_level")
      */
-    protected $username;
+    protected $access_level;
 
     /**
-     * @Column(name="password")
+     * Status da conta.
+     * 0 = normal
+     * 1 = pendente de confirmação
+     * 2 = banido
+     * @Column(name="state")
+     * @since   1.0.0
      */
-    protected $password;
+    protected $state;
 
     /**
+     * Nome do usuário.
      * @Column(name="name")
+     * @since   1.0.0
      */
     protected $name;
 
     /**
+     * Endereço de e-mail do usuário.
      * @Column(name="email")
+     * @since   1.0.0
      */
     protected $email;
+
+    /**
+     * Senha do usuário.
+     * @Column(name="password")
+     * @since   1.0.0
+     */
+    protected $password;
+
+    /**
+     * Último login realizado pelo usuário.
+     * @Column(name="last_login")
+     * @since   1.0.0
+     */
+    protected $last_login;
+
+    /**
+     * Último endereço de IP utilizado pelo o usuário
+     * para acessar a conta.
+     * @Column(name="last_ip")
+     * @since   1.0.0
+     */
+    protected $last_ip;
 
     /**
      * Get the value of id
@@ -50,7 +84,7 @@ class User {
      *
      * @return  self
      */ 
-    public function set_id($id)
+    private function set_id($id)
     {
         $this->id = $id;
 
@@ -58,45 +92,41 @@ class User {
     }
 
     /**
-     * Get the value of username
-     * 
-     * @return  string
+     * Get the value of access_level
      */ 
-    public function get_username()
+    public function get_access_level()
     {
-        return $this->username;
+        return $this->access_level;
     }
 
     /**
-     * Set the value of username
+     * Set the value of access_level
      *
      * @return  self
      */ 
-    public function set_username($username)
+    public function set_access_level($access_level)
     {
-        $this->username = $username;
+        $this->access_level = $access_level;
 
         return $this;
     }
 
     /**
-     * Get the value of password
-     * 
-     * @return  string
+     * Get the value of state
      */ 
-    public function get_password()
+    public function get_state()
     {
-        return $this->password;
+        return $this->state;
     }
 
     /**
-     * Set the value of password
+     * Set the value of state
      *
      * @return  self
      */ 
-    public function set_password($password)
+    public function set_state($state)
     {
-        $this->password = $password;
+        $this->state = $state;
 
         return $this;
     }
@@ -141,6 +171,68 @@ class User {
     public function set_email($email)
     {
         $this->email = $email;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of password
+     * 
+     * @return  string
+     */ 
+    public function get_password()
+    {
+        return $this->password;
+    }
+
+    /**
+     * Set the value of password
+     *
+     * @return  self
+     */ 
+    public function set_password($password)
+    {
+        $this->password = $password;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of last_login
+     */ 
+    public function get_last_login()
+    {
+        return $this->last_login;
+    }
+
+    /**
+     * Set the value of last_login
+     *
+     * @return  self
+     */ 
+    public function set_last_login($last_login)
+    {
+        $this->last_login = $last_login;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of last_ip
+     */ 
+    public function get_last_ip()
+    {
+        return $this->last_ip;
+    }
+
+    /**
+     * Set the value of last_ip
+     *
+     * @return  self
+     */ 
+    public function set_last_ip($last_ip)
+    {
+        $this->last_ip = $last_ip;
 
         return $this;
     }
