@@ -73,32 +73,32 @@
 									<div class="row">
 										<div class="col-12 col-md-6">
 											<div class="form-group mb-4">
-												<label for="name" class="text-secondary">Nome</label>
-												<input type="text" id="name" class="form-control form-control-lg" placeholder="Insira o nome completo">
+												<label for="name" class="text-secondary">Nome *</label>
+												<input type="text" name="name" id="name" class="form-control form-control-lg" placeholder="Insira o nome completo">
 											</div>
 										</div>
 										<div class="col-12 col-md-6">
 											<div class="form-group mb-4">
-												<label for="email" class="text-secondary">E-mail</label>
-												<input type="email" id="email" class="form-control form-control-lg" placeholder="Insira um e-mail válido">
+												<label for="email" class="text-secondary">E-mail *</label>
+												<input type="email" name="email" id="email" class="form-control form-control-lg" placeholder="Insira um e-mail válido">
 											</div>
 										</div>
 										<div class="col-12 col-md-6">
 											<div class="form-group mb-4">
-												<label for="username" class="text-secondary">Nome de usuário</label>
-												<input type="text" id="username" class="form-control form-control-lg">
+												<label for="password" class="text-secondary">Senha *</label>
+												<input type="password" name="password" id="password" class="form-control form-control-lg">
 											</div>
 										</div>
 										<div class="col-12 col-md-6">
 											<div class="form-group mb-4">
-												<label for="password" class="text-secondary">Senha</label>
-												<input type="password" id="password" class="form-control form-control-lg">
+												<label for="confirm_password" class="text-secondary">Confirmar senha *</label>
+												<input type="password" name="confirm_password" id="confirm_password" class="form-control form-control-lg">
 											</div>
 										</div>
 										<div class="col-12">
 											<div class="form-group">
 												<div class="form-check">
-													<input class="form-check-input" type="checkbox" id="terms-check">
+													<input type="checkbox" name="terms_check" id="terms_check" class="form-check-input">
 													<label class="form-check-label small text-secondary" for="terms-check">
 														Clicando em <strong>Cadastrar</strong>, você concorda com nossos <a role="button">Termos e Serviços</a>
 													</label>
