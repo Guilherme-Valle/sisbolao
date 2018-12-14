@@ -52,6 +52,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'page/render';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+# Páginas
+$route['cadastro'] = 'page/render/register';
+
 # API
 $route['api/users']['GET'] = 'users';
 $route['api/users/(:num)']['GET'] = 'users/id/$1';

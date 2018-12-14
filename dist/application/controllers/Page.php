@@ -58,7 +58,7 @@ class Page extends CI_Controller {
 
         switch ($page)
         {
-            case 'cadastro':
+            case 'register':
                 $title = 'Cadastro';
                 break;
         }
@@ -126,6 +126,9 @@ class Page extends CI_Controller {
             # Página inicial
             case 'home':
                 $body = 'home';
+                break;
+            case 'register':
+                $body = 'register';
                 break;
         }
 
