@@ -64,6 +64,9 @@ class Page extends CI_Controller {
             case 'login':
                 $title = 'Entrar';
                 break;
+            case 'dashboard':
+                $title = 'Painel de Controle';
+                break;
         }
 
         if ( ! empty($title))
@@ -135,6 +138,9 @@ class Page extends CI_Controller {
                 break;
             case 'login':
                 $body = 'login';
+                break;
+            case 'dashboard':
+                $body = 'dashboard/home';
                 break;
         }
 

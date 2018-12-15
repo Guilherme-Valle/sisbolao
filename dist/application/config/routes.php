@@ -57,6 +57,9 @@ $route['translate_uri_dashes'] = FALSE;
 $route['cadastro'] = 'page/render/register';
 $route['entrar'] = 'page/render/login';
 
+# Páginas - Painel de Controle
+$route['painel'] = 'page/render/dashboard';
+
 # API
 $route['api/sessions'] = 'sessions';
 $route['api/users'] = 'users';
