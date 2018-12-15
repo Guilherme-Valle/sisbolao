@@ -61,6 +61,9 @@ class Page extends CI_Controller {
             case 'register':
                 $title = 'Cadastro';
                 break;
+            case 'login':
+                $title = 'Entrar';
+                break;
         }
 
         if ( ! empty($title))
@@ -129,6 +132,9 @@ class Page extends CI_Controller {
                 break;
             case 'register':
                 $body = 'register';
+                break;
+            case 'login':
+                $body = 'login';
                 break;
         }
 
