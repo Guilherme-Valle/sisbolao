@@ -60,6 +60,7 @@ $route['entrar'] = 'page/render/login';
 # Páginas - Painel de Controle
 $route['painel'] = 'page/render/dashboard';
 $route['painel/meus-boloes'] = 'page/render/dashboard-my-betting-sets';
+$route['painel/boloes-que-participo'] = 'page/render/dashboard-i-participate';
 
 # API
 $route['api/sessions'] = 'sessions';
