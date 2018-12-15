@@ -2,14 +2,37 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+/**
+ * Manipulação de dados do usuário.
+ * 
+ * @author  Daniel Ferreira
+ * @author  Guilherme do Valle
+ * @author  Lucas Santos 
+ * @version 1.0.0
+ * @since   1.0.0
+ */
 class Users_model extends SISB_Model {
 
+    /**
+     * Método construtor.
+     * 
+     * @version 1.0.0
+     * @since   1.0.0
+     * @return  void
+     */
     public function __construct()
     {
         parent::__construct();
         $this->load->library('session');
     }
 
+    /**
+     * Obtenção de dados de usuários.
+     * 
+     * @version 1.0.0
+     * @since   1.0.0
+     * @return  array
+     */
     public function get($id = NULL)
     {
         $result = array();
@@ -31,6 +54,13 @@ class Users_model extends SISB_Model {
         return $this->result($query, $result_mode);        
     }
 
+    /**
+     * Criação de um novo usuário.
+     * 
+     * @version 1.0.0
+     * @since   1.0.0
+     * @return  void
+     */
     public function new($form_data = array())
     {
         if ( ! empty(array_filter($form_data)))
@@ -52,12 +82,19 @@ class Users_model extends SISB_Model {
         }
     }
 
+    /**
+     * Autenticação do usuário.
+     * 
+     * @version 1.0.0
+     * @since   1.0.0
+     * @return  int
+     */
     public function authenticate($form_data = array())
     {
         if( ! empty($form_data))
         {
             $response = 0;
-            $qb = $this->doctrine->entity_manager->createQueryBuilder();
+            $qb = $this->doctrine->get_entity_manager()->createQueryBuilder();
             $qb->select('users')
                 ->from('Entity\\User', 'users')
                 ->where('users.email = :email')
