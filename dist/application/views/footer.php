@@ -10,6 +10,11 @@
 			</div><!-- /.container !-->
 		</footer><!-- /.standard-footer !-->
 	
+		<script>
+			var ci = {
+				base_url: "<?php echo base_url(); ?>"
+			}
+		</script>
 		<script src="<?php echo $base_url; ?>/public/js/utils.min.js"></script>
 		<script src="<?php echo $base_url; ?>/public/js/scripts.min.js"></script>
 	</body>
