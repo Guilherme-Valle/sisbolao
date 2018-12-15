@@ -36,7 +36,7 @@ class Page extends CI_Controller {
             'betting-sets' => base_url('boloes'),
             'ranking' => base_url('ranking-apostadores'),
             'register' => base_url('cadastro'),
-            'login' => base_url('login'),
+            'login' => base_url('entrar'),
             # Links do Painel de Controle
             'dashboard' => base_url('painel'),
             'dashboard-account-edit' => base_url('painel/editar-conta'),
