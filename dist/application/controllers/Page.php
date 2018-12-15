@@ -67,6 +67,9 @@ class Page extends CI_Controller {
             case 'dashboard':
                 $title = 'Painel de Controle';
                 break;
+            case 'dashboard-my-betting-sets':
+                $title = 'Meus Bolões';
+                break;
         }
 
         if ( ! empty($title))
@@ -141,6 +144,9 @@ class Page extends CI_Controller {
                 break;
             case 'dashboard':
                 $body = 'dashboard/home';
+                break;
+            case 'dashboard-my-betting-sets':
+                $body = 'dashboard/my-betting-sets';
                 break;
         }
 
