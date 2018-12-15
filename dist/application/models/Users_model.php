@@ -42,13 +42,71 @@ class Users_model extends SISB_Model {
             $user->set_email($form_data['email']);
             $user->set_password($form_data['password']); # criptografar a senha?
 
-            # Iniciar persistência
+            # iniciar persistência
             $this->doctrine->get_entity_manager()->persist($user);
             $this->doctrine->get_entity_manager()->flush();
         }
         else
         {
-            // exception ?
+            # exception ?
+        }
+    }
+
+    public function authenticate($form_data = array())
+    {
+        if( ! empty($form_data))
+        {
+            $response = 0;
+            $qb = $this->doctrine->entity_manager->createQueryBuilder();
+            $qb->select('users')
+                ->from('Entity\\User', 'users')
+                ->where('users.email = :email')
+                ->setParameters(array(
+                    'email' => $form_data['email']
+                ));
+            $query = $qb->getQuery();
+
+            # e-mail existe?
+            if ( ! empty(array_filter($query->getResult())))
+            {
+                unset($qb); # reseta query builder
+                $qb = $this->doctrine->get_entity_manager()->createQueryBuilder();
+                $qb->select('users')
+                    ->from('Entity\\User', 'users')
+                    ->where('users.email = :email')
+                    ->andWhere('users.password = :password')
+                    ->setParameters(array(
+                        'email' => $form_data['email'],
+                        'password' => $form_data['password']
+                    ))
+                    ->setMaxResults(1);
+                $query = $qb->getQuery();
+
+                # verificação de senha
+                if( ! empty(($user = $query->getOneOrNullResult())))
+                {
+                    $response = 1;
+                    # inicializar sessão
+                    $this->session->set_userdata(array(
+                        'uid' => $this->encryption->encrypt($user->get_id())
+                    ));
+                }
+                # senha inválida
+                else
+                {
+                    $response = -2;
+                }
+            }
+            # e-mail inválido
+            else 
+            {
+                $response = -1;
+            }
+            return $response;
+        }
+        else
+        {
+            # exception ?
         }
     }
 
