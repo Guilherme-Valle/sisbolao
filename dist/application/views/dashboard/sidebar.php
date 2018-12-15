@@ -12,7 +12,7 @@
     <nav class="sidebar__menu py-4 font-weight-light">
         <ul class="m-0 p-0 list-style-none">
             <li>
-                <a role="button" class="px-4 py-3">
+                <a role="button" href="<?php echo $links['dashboard']; ?>" class="px-4 py-3">
                     <i class="sidebar__menu__i fas fa-cogs fa-lg"></i>
                     <span>Minha conta</span>
                 </a>
@@ -29,13 +29,13 @@
                 </a>
             </li>
             <li>
-                <a role="button" class="px-4 py-3">
+                <a role="button" href="<?php echo $links['dashboard-my-betting-sets']; ?>" class="px-4 py-3">
                     <i class="sidebar__menu__i far fa-futbol fa-lg"></i>
                     <span>Meus Bolões</span>
                 </a>
             </li>
             <li>
-                <a role="button" class="px-4 py-3">
+                <a role="button" href="<?php echo $links['dashboard-i-participate']; ?>" class="px-4 py-3">
                     <i class="sidebar__menu__i fas fa-futbol fa-lg"></i>
                     <span>Bolões que participo</span>
                 </a>

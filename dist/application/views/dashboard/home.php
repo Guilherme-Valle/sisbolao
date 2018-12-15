@@ -20,7 +20,7 @@
                             <h5 class="text-muted font-weight-light">Dados da Conta</h5>
                         </div>
                         <div class="col-6 text-right">
-                            <a href="#!" class="btn btn-pal-2-2">
+                            <a role="button" href="<?php echo $links['dashboard-account-edit']; ?>" class="btn btn-pal-2-2">
                                 <small>Editar</small>
                             </a>
                         </div>
