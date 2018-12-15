@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 14-Dez-2018 às 12:31
+-- Generation Time: 15-Dez-2018 às 01:14
 -- Versão do servidor: 5.7.19
 -- PHP Version: 7.1.9
 
@@ -36,8 +36,8 @@ CREATE TABLE IF NOT EXISTS `administrator` (
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `last_login` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `last_ip` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `last_login` datetime DEFAULT NULL,
+  `last_ip` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -87,8 +87,8 @@ CREATE TABLE IF NOT EXISTS `bettor` (
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `last_login` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `last_ip` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `last_login` datetime DEFAULT NULL,
+  `last_ip` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -180,10 +180,17 @@ CREATE TABLE IF NOT EXISTS `users` (
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `last_login` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `last_ip` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `last_login` datetime DEFAULT NULL,
+  `last_ip` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Extraindo dados da tabela `users`
+--
+
+INSERT INTO `users` (`id`, `access_level`, `state`, `name`, `email`, `password`, `last_login`, `last_ip`) VALUES
+(1, '0', '0', 'Lucas de Jesus Santos Brito', 'lucasljsb@gmail.com', '123456', NULL, NULL);
 
 --
 -- Constraints for dumped tables
