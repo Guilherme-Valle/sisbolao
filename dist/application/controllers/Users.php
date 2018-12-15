@@ -49,8 +49,6 @@ class Users extends REST_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
 
-        $result = array(); # saída
-
         # Mensagem padrão de campo obrigatório
         $required_message = 'O campo {field} é obrigatório';
 
