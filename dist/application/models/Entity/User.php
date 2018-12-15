@@ -56,7 +56,7 @@ class User {
 
     /**
      * Último login realizado pelo usuário.
-     * @Column(name="last_login")
+     * @Column(name="last_login", type="datetime", nullable=TRUE)
      * @since   1.0.0
      */
     protected $last_login;
@@ -64,7 +64,7 @@ class User {
     /**
      * Último endereço de IP utilizado pelo o usuário
      * para acessar a conta.
-     * @Column(name="last_ip")
+     * @Column(name="last_ip", nullable=TRUE)
      * @since   1.0.0
      */
     protected $last_ip;
