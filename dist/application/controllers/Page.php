@@ -44,6 +44,7 @@ class Page extends CI_Controller {
             'dashboard-my-betting-sets' => base_url('painel/meus-boloes'),
             'dashboard-i-participate' => base_url('painel/boloes-que-participo'),
             'dashboard-championships' => base_url('painel/campeonatos'),
+            'dashboard-rounds' => base_url('painel/rodadas'),
         );
     }
 
@@ -89,6 +90,9 @@ class Page extends CI_Controller {
             # Painel de Controle - Administradores do Sistema
             case 'dashboard-championships':
                 $title = 'Campeonatos - Painel de Controle';
+                break;
+            case 'dashboard-rounds':
+                $title = 'Rodadas - Painel de Controle';
                 break;
         }
 
@@ -183,6 +187,9 @@ class Page extends CI_Controller {
             # Painel de Controle - Administradores do Sistema
             case 'dashboard-championships':
                 $body = 'dashboard/championships';
+                break;
+            case 'dashboard-rounds':
+                $body = 'dashboard/rounds';
                 break;
         }
 

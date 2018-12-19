@@ -66,6 +66,7 @@ $route['painel/boloes-que-participo'] = 'page/render/dashboard-i-participate';
 
 # Páginas - Painel de Controle - Administradores do Sistema
 $route['painel/campeonatos'] = 'page/render/dashboard-championships';
+$route['painel/rodadas'] = 'page/render/dashboard-rounds';
 
 # API
 $route['api/sessions'] = 'sessions';
