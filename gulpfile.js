@@ -81,6 +81,7 @@ gulp.task('merge-minify-js', function(){
     // public utils
     gulp.src([
         './node_modules/vue/dist/vue.min.js',
+        './node_modules/vue-resource/dist/vue-resource.min.js',
         './src/public/js/**/!(scripts)*.js'
     ], { base: './' })
     .pipe($.sourcemaps.init())
