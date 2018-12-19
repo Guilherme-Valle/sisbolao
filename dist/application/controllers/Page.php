@@ -65,6 +65,9 @@ class Page extends CI_Controller {
             case 'login':
                 $title = 'Entrar';
                 break;
+            case 'betting-sets':
+                $title = 'Bolões';
+                break;
             case 'dashboard':
                 $title = 'Painel de Controle';
                 break;
@@ -145,6 +148,9 @@ class Page extends CI_Controller {
                 break;
             case 'login':
                 $body = 'login';
+                break;
+            case 'betting-sets':
+                $body = 'betting-sets';
                 break;
             case 'dashboard':
                 $body = 'dashboard/home';

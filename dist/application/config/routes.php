@@ -56,6 +56,7 @@ $route['translate_uri_dashes'] = FALSE;
 # Páginas
 $route['cadastro'] = 'page/render/register';
 $route['entrar'] = 'page/render/login';
+$route['boloes'] = 'page/render/betting-sets';
 
 # Páginas - Painel de Controle
 $route['painel'] = 'page/render/dashboard';
