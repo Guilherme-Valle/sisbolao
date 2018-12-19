@@ -60,6 +60,7 @@ $route['boloes'] = 'page/render/betting-sets';
 
 # Páginas - Painel de Controle
 $route['painel'] = 'page/render/dashboard';
+$route['painel/criar-bolao'] = 'page/render/dashboard-new-betting-set';
 $route['painel/meus-boloes'] = 'page/render/dashboard-my-betting-sets';
 $route['painel/boloes-que-participo'] = 'page/render/dashboard-i-participate';
 

@@ -40,6 +40,7 @@ class Page extends CI_Controller {
             # Links do Painel de Controle
             'dashboard' => base_url('painel'),
             'dashboard-account-edit' => base_url('painel/editar-conta'),
+            'dashboard-new-betting-set' => base_url('painel/criar-bolao'),
             'dashboard-my-betting-sets' => base_url('painel/meus-boloes'),
             'dashboard-i-participate' => base_url('painel/boloes-que-participo'),
         );
@@ -71,8 +72,11 @@ class Page extends CI_Controller {
             case 'dashboard':
                 $title = 'Painel de Controle';
                 break;
+            case 'dashboard-new-betting-set':
+                $title = 'Criar Bolão - Painel de Controle';
+                break;
             case 'dashboard-my-betting-sets':
-                $title = 'Meus Bolões';
+                $title = 'Meus Bolões - Painel de Controle';
                 break;
             case 'dashboard-i-participate':
                 $title = 'Bolões que participo';
@@ -154,6 +158,9 @@ class Page extends CI_Controller {
                 break;
             case 'dashboard':
                 $body = 'dashboard/home';
+                break;
+            case 'dashboard-new-betting-set':
+                $body = 'dashboard/new-betting-set.php';
                 break;
             case 'dashboard-my-betting-sets':
                 $body = 'dashboard/my-betting-sets';
