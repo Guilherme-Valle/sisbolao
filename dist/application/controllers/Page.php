@@ -43,6 +43,7 @@ class Page extends CI_Controller {
             'dashboard-new-betting-set' => base_url('painel/criar-bolao'),
             'dashboard-my-betting-sets' => base_url('painel/meus-boloes'),
             'dashboard-i-participate' => base_url('painel/boloes-que-participo'),
+            'dashboard-championships' => base_url('painel/campeonatos'),
         );
     }
 
@@ -60,6 +61,7 @@ class Page extends CI_Controller {
 
         switch ($page)
         {
+            # Páginas de acesso público
             case 'register':
                 $title = 'Cadastro';
                 break;
@@ -69,6 +71,8 @@ class Page extends CI_Controller {
             case 'betting-sets':
                 $title = 'Bolões';
                 break;
+
+            # Painel de Controle
             case 'dashboard':
                 $title = 'Painel de Controle';
                 break;
@@ -79,7 +83,12 @@ class Page extends CI_Controller {
                 $title = 'Meus Bolões - Painel de Controle';
                 break;
             case 'dashboard-i-participate':
-                $title = 'Bolões que participo';
+                $title = 'Bolões que participo - Painel de Controle';
+                break;
+
+            # Painel de Controle - Administradores do Sistema
+            case 'dashboard-championships':
+                $title = 'Campeonatos - Painel de Controle';
                 break;
         }
 
@@ -143,7 +152,7 @@ class Page extends CI_Controller {
         # Atribuições relativas
         switch ($page)
         {
-            # Página inicial
+            # Páginas de acesso público
             case 'home':
                 $body = 'home';
                 break;
@@ -156,6 +165,8 @@ class Page extends CI_Controller {
             case 'betting-sets':
                 $body = 'betting-sets';
                 break;
+
+            # Painel de Controle
             case 'dashboard':
                 $body = 'dashboard/home';
                 break;
@@ -167,6 +178,11 @@ class Page extends CI_Controller {
                 break;
             case 'dashboard-i-participate':
                 $body = 'dashboard/i-participate';
+                break;
+
+            # Painel de Controle - Administradores do Sistema
+            case 'dashboard-championships':
+                $body = 'dashboard/championships';
                 break;
         }
 

@@ -64,6 +64,9 @@ $route['painel/criar-bolao'] = 'page/render/dashboard-new-betting-set';
 $route['painel/meus-boloes'] = 'page/render/dashboard-my-betting-sets';
 $route['painel/boloes-que-participo'] = 'page/render/dashboard-i-participate';
 
+# Páginas - Painel de Controle - Administradores do Sistema
+$route['painel/campeonatos'] = 'page/render/dashboard-championships';
+
 # API
 $route['api/sessions'] = 'sessions';
 $route['api/users'] = 'users';
