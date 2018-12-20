@@ -11,12 +11,12 @@
     </div><!-- /.container !-->
 </nav><!-- /breadcrumb !-->
 
-<section id="registration-form" class="py-5 my-5">
+<section id="registration-form-wrapper" class="py-5 my-5">
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-12 col-md-9 col-lg-7">
                 <div class="blur-shadow p-5">
-                    <form method="post" action="<?php echo $base_url; ?>/api/users/">
+                    <form id="registration-form" data-action="<?php echo $base_url; ?>/api/users/" data-ajax-submit data-ajax-submit-alert>
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <div class="form-group mb-4">
@@ -39,24 +39,14 @@
                             <div class="col-12 col-md-6">
                                 <div class="form-group mb-4">
                                     <label for="confirm_password" class="text-secondary">Confirmar senha *</label>
-                                    <input type="password" name="confirm_password" id="confirm_password" class="form-control form-control-lg">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <div class="form-check">
-                                        <input type="checkbox" name="terms_check" id="terms_check" class="form-check-input">
-                                        <label class="form-check-label small text-secondary" for="terms-check">
-                                            Clicando em <strong>Cadastrar</strong>, você concorda com nossos <a role="button">Termos e Serviços</a>
-                                        </label>
-                                    </div>
+                                    <input type="password" name="confirm_password" id="confirm_password" class="form-control form-control-lg" data-equal-to="#password" data-equal-to-error-message="Confirmação não confere">
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
                                 <button type="submit" class="btn btn-lg btn-pal-1 text-uppercase small py-4 px-5 w-100">Cadastrar</button>
                             </div>
                             <div class="col-12 col-sm-6">
-                                <button type="submit" class="btn btn-lg btn-pal-4 text-uppercase small py-4 px-5 w-100">Apagar Formulário</button>
+                                <button type="reset" class="btn btn-lg btn-pal-4 text-uppercase small py-4 px-5 w-100">Apagar Formulário</button>
                             </div>
                         </div><!-- /.row !-->
                     </form>

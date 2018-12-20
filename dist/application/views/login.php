@@ -16,7 +16,7 @@
         <div class="row justify-content-md-center">
             <div class="col-12 col-md-9 col-lg-6 col-xl-5">
                 <div class="blur-shadow p-5">
-                    <form method="POST" action="<?php echo base_url('api/sessions'); ?>">
+                    <form data-action="<?php echo $base_url; ?>/api/sessions" data-ajax-submit data-ajax-submit-alert data-ajax-submit-redirect>
                         <div class="row justify-content-center justify-content-md-start">
                             <div class="col-12">
                                 <div class="form-group mb-4">
