@@ -4,6 +4,7 @@
  * @author  Daniel Ferreira
  * @author  Guilherme do Valle
  * @author  Lucas Santos
+ * @version 1.0.0
  * @since   1.0.0
  */
 

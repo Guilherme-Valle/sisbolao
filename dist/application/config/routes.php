@@ -49,8 +49,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+$route['default_controller'] = 'page/render';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-$route['api/users']['GET'] = 'users';
+
+# Páginas
+$route['cadastro'] = 'page/render/register';
+$route['entrar'] = 'page/render/login';
+$route['boloes'] = 'page/render/betting-sets';
+
+# Páginas - Painel de Controle
+$route['painel'] = 'page/render/dashboard';
+$route['painel/criar-bolao'] = 'page/render/dashboard-new-betting-set';
+$route['painel/meus-boloes'] = 'page/render/dashboard-my-betting-sets';
+$route['painel/boloes-que-participo'] = 'page/render/dashboard-i-participate';
+
+# Páginas - Painel de Controle - Administradores do Sistema
+$route['painel/campeonatos'] = 'page/render/dashboard-championships';
+$route['painel/rodadas'] = 'page/render/dashboard-rounds';
+
+# API
+$route['api/sessions'] = 'sessions';
+$route['api/users'] = 'users';
 $route['api/users/(:num)']['GET'] = 'users/id/$1';
