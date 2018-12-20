@@ -80,7 +80,9 @@ gulp.task('merge-minify-css', function(){
 gulp.task('merge-minify-js', function(){
     // public utils
     gulp.src([
-        './node_modules/vue/dist/vue.min.js',
+        './node_modules/jquery/dist/jquery.min.js',
+        './node_modules/bootstrap/dist/js/bootstrap.min.js',
+        './node_modules/block-ui/jquery.blockUI.js',
         './src/public/js/**/!(scripts)*.js'
     ], { base: './' })
     .pipe($.sourcemaps.init())
