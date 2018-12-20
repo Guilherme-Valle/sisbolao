@@ -130,6 +130,8 @@ class Page extends CI_Controller {
         if ($this->session->has_userdata('uid'))
         {
             # obter dados do usuário
+            $this->load->model('users_model');
+            $this->data['user'] = $this->users_model->get($this->encryption->decrypt($this->session->uid));
         } 
 
         # Rota ligada ao painel de controle?

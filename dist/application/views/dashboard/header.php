@@ -32,7 +32,7 @@
 								<li>
 									<a>
 										<i class="top-header__navbar__menu__i fas fa-user-circle fa-2x text-pal-2-2"></i>
-										<small>administrador</small>
+										<small><?php echo $user->get_name(); ?></small>
 									</a>
 								</li>
 							</ul>

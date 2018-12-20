@@ -31,19 +31,19 @@
                         <tbody>
                             <tr>
                                 <th scope="col" class="bg-light text-muted">Nome:</th>
-                                <td scope="col">Lucas de Jesus Santos Brito</td>
+                                <td scope="col"><?php echo $user->get_name(); ?></td>
                             </tr>
                             <tr>
                                 <th scope="col" class="bg-light text-muted">E-mail:</th>
-                                <td scope="col">lucasljsb@gmail.com</td>
+                                <td scope="col"><?php echo $user->get_email(); ?></td>
                             </tr>
                             <tr>
                                 <th scope="col" class="bg-light text-muted">Último login:</th>
-                                <td scope="col">13/12/2018</td>
+                                <td scope="col"><?php echo $user->get_last_login(); ?></td>
                             </tr>
                             <tr>
                                 <th scope="col" class="bg-light text-muted">Último IP:</th>
-                                <td scope="col">127.0.0.1</td>
+                                <td scope="col"><?php echo $user->get_last_ip(); ?></td>
                             </tr>
                         </tbody>
                     </table>
