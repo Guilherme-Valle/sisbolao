@@ -64,6 +64,18 @@ body {
 /*
  Helpers
  */
+.form-control.not-valid {
+    border-color: #AA3939 !important;
+    background-color: #FFAAAA !important;
+    color: #AA3939 !important;
+}
+span.error-alert {
+    display: block;
+    padding-top: 7.5px;
+}
+.error-alert {
+    color: #AA3939 !important;
+}
 .blur-shadow {
     box-shadow: 0 5px 30px 5px rgba(0,0,0,.06);
 }

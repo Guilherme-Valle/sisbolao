@@ -219,3 +219,13 @@ body {
 .font-weight-extra-bold {
     font-weight: 900;
 }
+
+/*
+ Extra
+ */
+.btn.text-uppercase.small {
+    font-size: .8rem;
+}
+.form-control-lg {
+    font-size: .9rem;
+}
